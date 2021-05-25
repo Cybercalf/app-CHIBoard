@@ -26,8 +26,6 @@ public class GameGoActivity extends AppCompatActivity {
         finishAndRemoveTask();
     }
 
-// TODO:把下子和提子的三个按钮变为一个Spinner
-
     /**
      * 让游戏变为下子操作
      */
