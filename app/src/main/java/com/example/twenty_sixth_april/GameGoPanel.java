@@ -9,7 +9,6 @@ import android.graphics.Point;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -39,7 +38,7 @@ public class GameGoPanel extends View {
     private final ArrayList<Point> mDotArray = new ArrayList<>();
 
     // 哪方下子
-    private boolean isWhiteFirst = false;
+    private boolean isBlackFirst = true;
 
     // 下子还是提子
     private boolean isAddPiece = true;
@@ -207,12 +206,12 @@ public class GameGoPanel extends View {
                     }
                     pieceBehavior = new PieceAddBehavior();
                     // 判断是白棋下子还是黑棋下子
-                    if (isWhiteFirst) {
-                        pieceBehavior.PieceControl(mWhiteArray, point);
-                    } else {
+                    if (isBlackFirst) {
                         pieceBehavior.PieceControl(mBlackArray, point);
+                    } else {
+                        pieceBehavior.PieceControl(mWhiteArray, point);
                     }
-                    invertIsWhiteFirst(); // 切换下棋的一方
+                    invertIsBlackFirst(); // 切换下棋的一方
                 }
                 // 提子的操作
                 else {
@@ -235,8 +234,8 @@ public class GameGoPanel extends View {
     /**
      * 改变下棋的一方
      */
-    public void setWhiteFirst(boolean whiteFirst) {
-        isWhiteFirst = whiteFirst;
+    public void setBlackFirst(boolean blackFirst) {
+        isBlackFirst = blackFirst;
     }
 
     /**
@@ -246,16 +245,16 @@ public class GameGoPanel extends View {
         isAddPiece = addPiece;
     }
 
-    public boolean isWhiteFirst() {
-        return isWhiteFirst;
+    public boolean isBlackFirst() {
+        return isBlackFirst;
     }
 
     public boolean isAddPiece() {
         return isAddPiece;
     }
 
-    public void invertIsWhiteFirst() {
-        this.isWhiteFirst = !this.isWhiteFirst;
+    public void invertIsBlackFirst() {
+        this.isBlackFirst = !this.isBlackFirst;
     }
 
     /**
