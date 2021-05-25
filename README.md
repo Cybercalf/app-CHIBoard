@@ -38,11 +38,11 @@ If you are not a developer, we are sorry to say that **the project is not yet co
 
 ### More Information
 
-For more information on this app, please see all the documents in the "doc/" folder. We hope that most of the questions can be answered from the files inside this folder. If you have any other questions, welcome to contact us.
+For more information on this app, please see all the documents in the "doc/" folder. We hope that most of the questions can be answered from the files inside this folder. If you have any other questions, welcome to contact us. **Please notice that some of the context are written in Chinese.**
 
 "progress-report.md": This file records what we initially wanted the app to do, what each developer has contributed to the project and the process of developing the project, so you can see how we put our ideas into practice step by step.
 
-"tech.md": This file documents all the techniques we apply in our projects. The techniques here mainly mean the use of some classes in java, the classic patterns of programming, and so on. Please notice that this project was originally used for a programming course assignment (we were just normal first year undergraduates when we started writing this document XD), so the main purpose of this document is to let the teacher or anyone else know that **we do used what we learned in class when developing this project**. If you are interested, you can also open it to see the techniques we have used and give your valuable comments.
+"tech.md": This file documents all the techniques we apply in our projects. The techniques here mainly mean the use of some classes in java, the classic patterns of programming, and so on. Please notice that this project was originally used for a programming course assignment (we were just normal first year undergraduates when we started writing this document XD), so the main purpose of this document is to let the teacher or anyone else know that **we do used what we learned in class to develop this project**. If you are interested, you can also open it to see the techniques we have used and give your valuable comments.
 
 "todo.md": What can be done to improve the project and what features have not been implemented are available in this file. Honestly, the time and effort we put into this project was really minimal, so after just a few weeks of development we were left with quite a few regrets. If you can contribute to this app, we will appreciate it.
 
