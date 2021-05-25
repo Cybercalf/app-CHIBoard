@@ -212,6 +212,7 @@ public class GameGoPanel extends View {
                     } else {
                         pieceBehavior.PieceControl(mBlackArray, point);
                     }
+                    invertIsWhiteFirst(); // 切换下棋的一方
                 }
                 // 提子的操作
                 else {
@@ -243,6 +244,18 @@ public class GameGoPanel extends View {
      */
     public void setAddPiece(boolean addPiece) {
         isAddPiece = addPiece;
+    }
+
+    public boolean isWhiteFirst() {
+        return isWhiteFirst;
+    }
+
+    public boolean isAddPiece() {
+        return isAddPiece;
+    }
+
+    public void invertIsWhiteFirst() {
+        this.isWhiteFirst = !this.isWhiteFirst;
     }
 
     /**

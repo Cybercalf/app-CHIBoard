@@ -8,53 +8,43 @@
     tools:context=".GameGoActivity">
 
     <Button
-        android:onClick="finishGameGoActivity"
         android:id="@+id/bt_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="finishGameGoActivity"
         android:text="@string/bt_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"/>
+        app:layout_constraintVertical_bias="0.03" />
+
     <Button
-        android:onClick="setBlackFirst"
         android:id="@+id/bt_set_black_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="黑棋下子"
+        android:onClick="addPiece"
+        android:text="@string/bt_add_piece"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"/>
+        app:layout_constraintVertical_bias="0.03" />
+
     <Button
-        android:onClick="setWhiteFirst"
-        android:id="@+id/bt_set_white_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="白棋下子"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"/>
-    <Button
-        android:onClick="setRemovePiece"
         android:id="@+id/bt_set_remove_piece"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="提子"
+        android:onClick="removePiece"
+        android:text="@string/bt_remove_piece"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"/>
+        app:layout_constraintVertical_bias="0.97" />
 
     <com.example.twenty_sixth_april.GameGoPanel
         android:id="@+id/game_go_panel"
@@ -65,6 +55,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"/>
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,8 @@
     <string name="bt_back">返回</string>
     <string name="bt_show_license">License</string>
     <string name="bt_close">X</string>
+    <string name="bt_add_piece">下子</string>
+    <string name="bt_remove_piece">提子</string>
     <string name="tv_fragment_license">__TEMP</string>
 
 </resources>
