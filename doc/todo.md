@@ -15,6 +15,7 @@ The current issues that we urgently need to address are as follows.
 - Restructuring the project structure using a package management approach
 - Implement draw and play action on boards other than the Go board
 - Add a 'history' function to the app to record every move made by the user on the board
+- Make "License" available in AboutActivity.
 - The other "TODO" in the project
 
 We would be grateful if you could handle one or more of the above issues.
