@@ -7,7 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
-public class GameGoActivity extends AppCompatActivity {
+public class
+GameGoActivity extends AppCompatActivity {
 
     private GameGoPanel panel;
     private ImageView imBlackPiece;
